@@ -360,8 +360,8 @@ body {
     border: none;
     box-shadow: 2px 2px 14px 1px rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 33%;
+    transform: translateY(-33%);
     right: -28px;
     z-index: 10;
     cursor: pointer;
@@ -376,7 +376,7 @@ body {
   .product-card {
     &__img {
       width: 100%;
-      height: 388px;
+      height: 568px;
       object-fit: cover;
       box-shadow: 3px 5px 14px 5px rgba(240, 240, 240, 0.8);
       border-radius: 8px;
@@ -443,6 +443,43 @@ body {
     color: #fff;
     font-size: 20px;
     font-family: 'Ubuntu';
+  }
+  .benefits {
+    max-width: 490px;
+    &-title {
+      margin-bottom: 58px;
+      font-size: 42px;
+      line-height: 44px;
+      font-weight: bold;
+      span {
+        color: #fe311f;
+      }
+    }
+  }
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .benefits-item {
+    display: flex;
+    gap: 23px;
+    align-items: start;
+    &__icon {
+      width: 62px;
+      height: 62px;
+    }
+    &__title {
+      color: #fe311f;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 27px;
+    }
+    &__desc {
+      font-size: 20px;
+      font-weight: 300;
+      margin-top: 7px;
+    }
   }
 }
 
