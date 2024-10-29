@@ -484,4 +484,11 @@ body {
   font-size: 20px;
   font-weight: 300;
   margin-top: 7px;
+}
+.product-info .promo-section {
+  margin-top: 93px;
+}
+.product-info .promo-section .promo-info {
+  background: url(../images/promo-card-bg.png) no-repeat;
+  background-size: 100% 100%;
 }/*# sourceMappingURL=style.css.map */
