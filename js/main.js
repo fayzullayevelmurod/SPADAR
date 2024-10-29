@@ -1,11 +1,20 @@
 // about-us__media-shorts-swiper
-var mediaSwiper = new Swiper('.about-us__media-shorts-swiper', {
-  slidesPerView: 3.8, // Ko'rinadigan slaydlar soni
-  spaceBetween: 14, // Slaydlar orasidagi masofa
-  centeredSlides: true, // Markaziy slayd qilish
+let mediaSwiper = new Swiper('.about-us__media-shorts-swiper', {
+  slidesPerView: 3.8,
+  spaceBetween: 14,
+  centeredSlides: true,
   initialSlide: 2,
   pagination: {
     el: '.swiper-pagination',
-    clickable: true, // Pagination tugmalarini bosish imkoniyati
+    clickable: true,
+  },
+});
+
+let productSwiper = new Swiper('.product-info__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 14,
+  navigation: {
+    nextEl: '.product-swiper-btn-next',
+    prevEl: '.product-swiper-btn-prev',
   },
 });

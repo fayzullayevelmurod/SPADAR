@@ -337,4 +337,114 @@ body {
   color: #6d6d6d;
   font-size: 16px;
   line-height: 22px;
+}
+
+.product-info {
+  padding: 37px 0 128px 0;
+}
+.product-info .top-box {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.product-info .product-swiper {
+  position: relative;
+}
+.product-info .product-info__swiper {
+  max-width: 425px;
+}
+.product-info .product-swiper-btn-prev,
+.product-info .product-swiper-btn-next {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  border: none;
+  box-shadow: 2px 2px 14px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -28px;
+  z-index: 10;
+  cursor: pointer;
+}
+.product-info .product-swiper-btn-prev {
+  right: unset;
+  left: -28px;
+}
+.product-info .product-swiper-btn-prev img {
+  transform: rotate(180deg);
+}
+.product-info .product-card__img {
+  width: 100%;
+  height: 388px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 3px 5px 14px 5px rgba(240, 240, 240, 0.8);
+  border-radius: 8px;
+}
+.product-info .price-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0;
+}
+.product-info .price-list .new-price {
+  color: #c337ff;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.product-info .price-list .old-price {
+  color: #9d9ba4;
+  font-size: 19px;
+  line-height: 23px;
+}
+.product-info .product-content {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+.product-info .product-content .product-name {
+  font-family: "Ubuntu";
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+.product-info .product-content .product-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.product-info .product-content .product-rating .star-icon {
+  width: 24px;
+  height: 22px;
+}
+.product-info .product-content .product-rating__count {
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 5px;
+}
+.product-info .product-content .product-desc {
+  color: #808080;
+  font-size: 20px;
+  line-height: 26px;
+}
+.product-info .order-btn {
+  background: #c237ff;
+  width: 100%;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 14px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Ubuntu";
 }/*# sourceMappingURL=style.css.map */
