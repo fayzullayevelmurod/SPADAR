@@ -768,30 +768,232 @@ body {
   align-items: center;
 }
 
-.stats {
+.reviews {
+  padding-bottom: 76px;
+}
+.reviews .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
   gap: 20px;
-  margin-top: -50px;
   position: relative;
   z-index: 10;
+  margin: -50px 0 100px 0;
 }
-.stats__item {
+.reviews .stats__item {
   padding: 25px 28px;
   background: #f9f9fa;
   border: 1px solid #cbcbcb;
   border-radius: 8px;
   text-align: center;
 }
-.stats__number {
+.reviews .stats__number {
   font-size: 48px;
   line-height: 53px;
   color: #ff4231;
   margin-bottom: 12px;
   font-weight: 900;
 }
-.stats__description {
+.reviews .stats__description {
   font-size: 19px;
   line-height: 20px;
   color: #2e2e2e;
+}
+.reviews-box {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}
+.reviews__telegram {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+.reviews__telegram-text {
+  font-size: 36px;
+  line-height: 49px;
+}
+.reviews__telegram-phone {
+  position: absolute;
+  top: 56px;
+  width: 391px;
+  height: 422px;
+  right: -91px;
+}
+.reviews__telegram-phone img {
+  width: 100%;
+  height: 100%;
+}
+.reviews__telegram-info {
+  max-width: 296px;
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  background: #fff;
+  box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-top: 70px;
+  position: relative;
+  z-index: 2;
+  font-size: 26px;
+  line-height: 33px;
+  color: #444444;
+}
+.reviews__videos {
+  max-width: 483px;
+  width: 100%;
+}
+.reviews__video-main {
+  width: 100%;
+  height: 271px;
+  border-radius: 8px;
+}
+.reviews__video-main img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  border-radius: inherit;
+}
+.reviews__bottom-videos {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.reviews__video-thumbnail {
+  border-radius: 8px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.reviews__video-thumbnail:hover {
+  opacity: 1;
+}
+.reviews__video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.reviews .customer-reviews {
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.socials {
+  padding: 49px 0 105px 0;
+  background: #eff4f9;
+}
+.socials-title {
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: bold;
+  text-align: center;
+}
+.socials-subtitle {
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 39px;
+}
+.socials-list {
+  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(183px, 1fr));
+}
+.socials-item {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 12px 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 4px rgba(131, 131, 131, 0.1);
+  height: 71px;
+}
+.socials-item img {
+  width: 48px;
+  height: 48px;
+}
+.socials-name {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.socials-link {
+  font-size: 9px;
+  line-height: 14px;
+  font-weight: normal;
+  display: block;
+  font-weight: 300;
+}
+
+.spatula {
+  padding-bottom: 50px;
+}
+.spatula-banner {
+  max-width: 961px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background: url(../images/spatula-bg.png) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+  padding: 54px 0 81px 0;
+  border-radius: 10px;
+  margin-top: -37px;
+}
+.spatula-banner__title {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  transform: skew(0, -3deg);
+}
+.spatula-banner__title span {
+  color: #f33626;
+}
+.spatula-banner .spatula-img {
+  position: absolute;
+  bottom: -60px;
+  left: -18px;
+  width: 222px;
+  height: 226px;
+  transform: rotate(7deg);
+}
+.spatula-banner .home-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.spatula .parent-box {
+  position: relative;
+}
+.spatula .parent-box .red-btn {
+  background: #f43726;
+  padding: 30px 60px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-top: 31px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  box-shadow: 0 6px 0px #b02114;
 }/*# sourceMappingURL=style.css.map */
