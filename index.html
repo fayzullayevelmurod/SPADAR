@@ -23,7 +23,7 @@
     <header class="header">
       <div class="big-container">
         <div class="header-logo__box">
-          <img src="images/icons/menu.png" alt="menu icon">
+          <img class="menu-img" src="images/icons/menu.png" alt="menu icon">
           <a class="header-logo" href="#!">СПАДАР</a>
           <div class="header-logo__text">Завод штукатурных <br>
             смесей</div>
@@ -41,6 +41,12 @@
         <div class="big-container">
           <img class="intro-human__img" src="images/human.png" alt="intro-human">
           <img class="intro-product" src="images/intro-product.png" alt="">
+          <div class="intro-human__info">
+            <h3>Курлович <br>
+              <span>Вячеслав Александрович</span>
+            </h3>
+            <span class="text">Директор ООО «Спадар» </span>
+          </div>
           <div class="intro-servis__life">
             <span class="intro-servis__life-text">Срок службы</span>
             <h2 class="intro-servis__life-title">25 лет</h2>
@@ -54,7 +60,7 @@
               <div class="feature-text">РАЗРАБОТАНО СО <span>СКОЛКОВО</span></div>
             </div>
             <div class="feature-item feature-red">
-              <div class="feature-icon">5 в 1</div>
+              <div class="feature-icon">5 <span>в</span> 1</div>
               <div class="feature-text">НЕ ПРОСТО ШТУКАТУРКА</div>
             </div>
             <div class="feature-item feature-red">
@@ -78,35 +84,44 @@
             <h2 class="about-us__learn-more-title"><span>Узнай</span> о нас всё</h2>
             <img class="about-us__learn-more-icon" src="images/icons/down-btn.png" alt="">
           </div>
-          <div class="about-us__cards">
-            <a class="about-us__card" href="#!">
-              <img class="about-us__card-img" src="images/about-us-card-img-1.png" alt="about-us-card-img">
-              <div class="about-us__card-body">
-                <h3 class="about-us__card-title">Чем мы хуже?</h3>
-                <div class="next-btn">
-                  <img src="images/icons/next-icon.png" alt="">
-                </div>
+          <div class="swiper-container about-us__cards about-us__cards-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="about-us__card" href="#!">
+                  <img class="about-us__card-img" src="images/about-us-card-img-1.png" alt="about-us-card-img">
+                  <div class="about-us__card-body">
+                    <h3 class="about-us__card-title">Чем мы хуже?</h3>
+                    <div class="next-btn">
+                      <img src="images/icons/next-icon.png" alt="">
+                    </div>
+                  </div>
+                </a>
               </div>
-            </a>
-            <a class="about-us__card" href="#!">
-              <img class="about-us__card-img" src="images/about-us-card-img-2.png" alt="about-us-card-img">
-              <div class="about-us__card-body">
-                <h3 class="about-us__card-title">Сравнение лучших
-                  штукатурок</h3>
-                <div class="next-btn">
-                  <img src="images/icons/next-icon.png" alt="">
-                </div>
+              <div class="swiper-slide">
+                <a class="about-us__card" href="#!">
+                  <img class="about-us__card-img" src="images/about-us-card-img-2.png" alt="about-us-card-img">
+                  <div class="about-us__card-body">
+                    <h3 class="about-us__card-title">Сравнение лучших
+                      штукатурок</h3>
+                    <div class="next-btn">
+                      <img src="images/icons/next-icon.png" alt="">
+                    </div>
+                  </div>
+                </a>
               </div>
-            </a>
-            <a class="about-us__card" href="#!">
-              <img class="about-us__card-img" src="images/about-us-card-img-3.png" alt="about-us-card-img">
-              <div class="about-us__card-body">
-                <h3 class="about-us__card-title">Спадар - лучшая штукатурка</h3>
-                <div class="next-btn">
-                  <img src="images/icons/next-icon.png" alt="">
-                </div>
+              <div class="swiper-slide">
+                <a class="about-us__card" href="#!">
+                  <img class="about-us__card-img" src="images/about-us-card-img-3.png" alt="about-us-card-img">
+                  <div class="about-us__card-body">
+                    <h3 class="about-us__card-title">Спадар - лучшая штукатурка</h3>
+                    <div class="next-btn">
+                      <img src="images/icons/next-icon.png" alt="">
+                    </div>
+                  </div>
+                </a>
               </div>
-            </a>
+            </div>
+            <div class="swiper-pagination about-us__cards-swiper-pagination"></div>
           </div>
 
           <div class="about-us__media">
@@ -191,6 +206,7 @@
                   <img src="images/icons/next-icon-2.png" alt="">
                 </button>
                 <div class="swiper product-info__swiper">
+                  <div class="product-info__swiper-pagination swiper-pagination"></div>
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="product-card">
@@ -340,7 +356,8 @@
               <p>
                 <b>Магазины и контакты</b> официальных дилеров в вашем регионе
               </p>
-              <a class="red-btn" href="#!">Смотреть</a>
+              <a class="red-btn" href="#!"><span class="media-hide__text">Смотреть</span> <span
+                  class="media-show__text">Подробнее</span></a>
               <img class="map-img" src="images/map.png" alt="">
             </div>
           </div>
