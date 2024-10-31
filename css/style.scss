@@ -101,7 +101,7 @@ body {
   background: url(../images/home-bg-2.png) no-repeat;
   background-size: cover;
   padding-top: 196px;
-  height: 898px;
+  height: 1092px;
   .big-container {
     position: relative;
     height: 100%;
@@ -997,6 +997,7 @@ body {
       transform: translateX(-50%);
       z-index: 1;
       box-shadow: 0 6px 0px #b02114;
+      transition: all 0.2s linear;
     }
   }
 }
