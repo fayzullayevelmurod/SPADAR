@@ -1,3 +1,19 @@
+@media screen and (max-width: 1440px) {
+  .fixed-menu {
+    width: 400px;
+    padding: 30px 30px 10px 30px;
+    transform: translateX(-100%);
+
+    &.show {
+      transform: translateX(0);
+    }
+  }
+  .wrapper,
+  .header {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .big-container,
   .container {
@@ -770,5 +786,17 @@
   }
   .spatula .certificate-card.two .card-img {
     width: 100%;
+  }
+  .fixed-menu {
+    width: 300px;
+    padding: 10px;
+  }
+  .fixed-menu__title .company-name {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .fixed-menu .list-box a {
+    font-size: 16px;
+    line-height: 18px;
   }
 }

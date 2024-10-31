@@ -59,3 +59,28 @@ let aboutUsCardsSwiper = new Swiper('.about-us__cards-swiper', {
     }
   }
 });
+
+
+window.addEventListener("scroll", function () {
+  const menu = document.querySelector(".fixed-menu");
+  if (window.scrollY === 0) {
+    menu.classList.add("top");
+    menu.classList.remove("scrolled");
+  } else {
+    menu.classList.add("scrolled");
+    menu.classList.remove("top");
+  }
+});
+
+const menuBtn = document.querySelector('.menu-img');
+const fixedMenu = document.querySelector('.fixed-menu');
+
+menuBtn.addEventListener('click', () => {
+  fixedMenu.classList.toggle('show');
+})
+
+window.addEventListener('click', (event) => {
+  if (!menuBtn.contains(event.target) && !fixedMenu.contains(event.target)) {
+    fixedMenu.classList.remove('show');
+  }
+});
