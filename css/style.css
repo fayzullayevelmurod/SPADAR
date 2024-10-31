@@ -227,6 +227,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  box-shadow: inset 0px 0px 10px #3c3c3c;
 }
 .intro .feature-text {
   font-size: 20px;
