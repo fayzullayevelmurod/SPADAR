@@ -996,6 +996,7 @@ body {
   &__videos {
     max-width: 483px;
     width: 100%;
+    position: relative;
   }
   &__video-main {
     width: 100%;
@@ -1274,24 +1275,6 @@ body {
       color: #fff;
       margin: 20px 0;
     }
-    .green-btn {
-      background: #bbee55;
-      border: 1px solid #bbee55;
-      padding: 30px 60px;
-      color: #454545;
-      font-size: 16px;
-      line-height: 18px;
-      text-transform: uppercase;
-      border-radius: 8px;
-      z-index: 1;
-      box-shadow: 0 6px 0px #87ac3d;
-      transition: all 0.2s linear;
-      &:hover {
-        background: #fff;
-        color: #ff3b2b;
-        border-color: #fff;
-      }
-    }
     &__img-human {
       position: absolute;
       bottom: 0;
@@ -1303,6 +1286,27 @@ body {
       position: absolute;
       bottom: -150px;
       right: 223px;
+    }
+  }
+  .media-block__btn {
+    display: none;
+  }
+  .green-btn {
+    background: #bbee55;
+    border: 1px solid #bbee55;
+    padding: 30px 60px;
+    color: #454545;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0 6px 0px #87ac3d;
+    transition: all 0.2s linear;
+    &:hover {
+      background: #fff;
+      color: #ff3b2b;
+      border-color: #fff;
     }
   }
 }

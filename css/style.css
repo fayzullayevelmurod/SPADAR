@@ -991,6 +991,7 @@ body {
 .reviews__videos {
   max-width: 483px;
   width: 100%;
+  position: relative;
 }
 .reviews__video-main {
   width: 100%;
@@ -1265,7 +1266,22 @@ body {
   color: #fff;
   margin: 20px 0;
 }
-.better-banner .green-btn {
+.better-banner__img-human {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 448px;
+}
+.better-banner .better-product {
+  position: absolute;
+  bottom: -150px;
+  right: 223px;
+}
+.better .media-block__btn {
+  display: none;
+}
+.better .green-btn {
   background: #bbee55;
   border: 1px solid #bbee55;
   padding: 30px 60px;
@@ -1278,22 +1294,10 @@ body {
   box-shadow: 0 6px 0px #87ac3d;
   transition: all 0.2s linear;
 }
-.better-banner .green-btn:hover {
+.better .green-btn:hover {
   background: #fff;
   color: #ff3b2b;
   border-color: #fff;
-}
-.better-banner__img-human {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  width: 448px;
-}
-.better-banner .better-product {
-  position: absolute;
-  bottom: -150px;
-  right: 223px;
 }
 
 .footer {
@@ -1604,6 +1608,129 @@ body {
     flex-direction: column-reverse;
     gap: 10px;
   }
+  .reviews-box {
+    padding-top: 44px;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .reviews__videos {
+    max-width: 100%;
+  }
+  .reviews__telegram {
+    max-width: 100%;
+  }
+  .reviews__telegram-text {
+    font-size: 28px;
+    line-height: 32px;
+    width: 295px;
+  }
+  .reviews__telegram-phone {
+    top: 0;
+    right: 0;
+    width: 306px;
+    height: 330px;
+  }
+  .reviews__telegram-info {
+    margin-top: 20px;
+    width: 221px;
+    height: 64px;
+  }
+  .reviews__telegram-info {
+    font-size: 19px;
+    gap: 10px;
+  }
+  .reviews__telegram-info img {
+    width: 50px;
+    height: 48px;
+  }
+  .reviews__telegram-phone {
+    top: -18px;
+    right: -50px;
+  }
+  .reviews .customer-reviews {
+    margin-bottom: 22px;
+  }
+  .spatula-banner__title {
+    font-size: 54px;
+    line-height: 50px;
+    position: relative;
+    z-index: 10;
+    width: 328px;
+    margin: 0 auto;
+  }
+  .spatula-banner__title br {
+    display: none;
+  }
+  .spatula-banner {
+    border-radius: 20px;
+  }
+  .spatula-banner .spatula-img {
+    width: 222px;
+    height: 226px;
+    bottom: -91px;
+    left: -104px;
+    transform: rotate(29deg);
+  }
+  .spatula-banner .home-img {
+    right: -48px;
+    bottom: -33px;
+  }
+  .spatula .parent-box .red-btn {
+    white-space: nowrap;
+  }
+  .spatula-banner {
+    overflow: visible;
+  }
+  .spatula .certificates {
+    flex-direction: column;
+  }
+  .spatula .certificate-card.one {
+    background-position: right;
+  }
+  .better-top {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  .better-banner__img-human {
+    bottom: 0;
+    width: 443px;
+    height: 500px;
+  }
+  .better .container {
+    padding: 0;
+  }
+  .better-banner {
+    border-radius: 0;
+    padding: 65px 31px 257px 31px;
+  }
+  .better-banner .better-product {
+    bottom: -98px;
+  }
+  .better-banner__title {
+    font-size: 54px;
+    line-height: 52px;
+    width: 250px;
+  }
+  .better-banner__info {
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .better-banner .green-btn {
+    position: relative;
+    z-index: 10;
+  }
+  .better-banner {
+    background-position: -100px 0;
+  }
+  .footer .container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer .container > div {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 768px) {
   .header .big-container {
@@ -1852,6 +1979,82 @@ body {
     margin-left: 20px;
     margin-bottom: 12px;
   }
+  .reviews {
+    padding-bottom: 40px;
+  }
+  .socials-subtitle {
+    margin-bottom: 32px;
+  }
+  .socials {
+    background: transparent;
+    padding-top: 0;
+  }
+  .socials-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .socials-subtitle {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .media-hide__btn {
+    display: none;
+  }
+  .better .media-block__btn {
+    display: flex;
+    position: absolute;
+    bottom: 60px;
+    z-index: 10;
+    left: 30px;
+  }
+  .better {
+    padding-top: 34px;
+  }
+  .better-banner__img-human {
+    right: -160px;
+  }
+  .better-banner .better-product {
+    right: 56px;
+  }
+  .footer {
+    margin-top: 0;
+  }
+  .footer .container > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+  }
+  .footer .container {
+    gap: 25px;
+  }
+  .footer .container {
+    padding: 0 20px;
+  }
+  .footer .footer-logo {
+    flex-direction: column-reverse;
+    gap: 4px;
+    align-items: start;
+    text-align: left;
+  }
+  .footer .footer-logo__info {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .footer-left__top {
+    gap: 20px;
+    justify-content: center;
+  }
+  .footer {
+    padding: 53px 0 70px 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .header .big-container {
@@ -1941,5 +2144,47 @@ body {
     bottom: -14px;
     right: 99px;
     transform: rotate(-11deg);
+  }
+  .spatula .certificates {
+    margin-top: 90px;
+  }
+  .spatula .container {
+    padding: 0;
+  }
+  .spatula .certificate-card {
+    border: none;
+  }
+  .spatula .certificate-card.one img {
+    transform: translateX(-30px);
+  }
+  .spatula .certificate-card.two {
+    background: transparent;
+    overflow: visible;
+  }
+  .spatula .certificate-card__desc {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .spatula .certificate-card.two .red-btn {
+    position: unset;
+    margin: 0 auto;
+    display: block;
+    transform: translate(0);
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .better-banner__img-human {
+    right: -217px;
+  }
+  .reviews__telegram-phone {
+    top: -21px;
+    right: -157px;
+  }
+  .reviews .stats {
+    top: 27%;
+  }
+  .spatula .certificate-card.two .card-img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
