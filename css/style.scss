@@ -469,7 +469,7 @@ body {
     align-items: start;
     justify-content: space-between;
   }
-  .product-info__swiper-pagination{
+  .product-info__swiper-pagination {
     display: none;
   }
   .product-swiper {
@@ -787,7 +787,9 @@ body {
     align-items: center;
     gap: 2px;
     position: relative;
-
+    .view-text {
+      display: none;
+    }
     .up-arrow {
       position: absolute;
       bottom: -69px;
@@ -1438,7 +1440,7 @@ body {
   }
 }
 // footer
-.media-show__text{
+.media-show__text {
   display: none;
 }
 @import './media';
