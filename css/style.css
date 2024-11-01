@@ -1554,16 +1554,6 @@ body {
   align-items: end;
   justify-content: space-between;
 }
-.reviews-block .reviews-header .breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-.reviews-block .reviews-header .breadcrumb a,
-.reviews-block .reviews-header .breadcrumb span {
-  font-size: 14px;
-  color: #b9b8b7;
-}
 .reviews-block .reviews-header .logo-title {
   color: #f11e1e;
   font-family: "Bebas Neue";
@@ -1621,6 +1611,152 @@ body {
   font-style: italic;
   font-weight: 500;
   text-align: center;
+}
+
+.recommend-watching {
+  margin: 65px 0 35px 0;
+}
+.recommend-watching .title-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 19px;
+}
+.recommend-watching .title-box__title {
+  font-size: 26px;
+  font-weight: 800;
+}
+.recommend-watching .recommend-swiper__box {
+  position: relative;
+}
+.recommend-watching .recommend-swiper-btn-prev,
+.recommend-watching .recommend-swiper-btn-next {
+  width: 57px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #d2d2d2;
+  box-shadow: 2px 2px 14px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 32%;
+  transform: translateY(-50%);
+  z-index: 10;
+  left: -25px;
+}
+.recommend-watching .recommend-swiper-btn-prev img,
+.recommend-watching .recommend-swiper-btn-next img {
+  transform: rotate(180deg);
+}
+.recommend-watching .recommend-swiper-btn-next {
+  right: -25px;
+  left: unset;
+}
+.recommend-watching .recommend-swiper-btn-next img {
+  transform: rotate(0);
+}
+.recommend-watching__card-img {
+  width: 100%;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.recommend-watching__card-title {
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  width: 253px;
+  margin: 14px 0 8px 0;
+}
+.recommend-watching__card-desc {
+  font-size: 14px;
+  line-height: 18px;
+  color: #868585;
+  width: 296px;
+}
+
+.partner .better {
+  position: relative;
+  padding: 0;
+}
+.partner .better-banner {
+  margin-top: 28px;
+  position: relative;
+}
+.partner .better-banner::before {
+  content: "";
+  position: absolute;
+  top: -48px;
+  left: -38px;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.1));
+  border-radius: 10px;
+  padding: 20px;
+  filter: blur(57px);
+  width: 190px;
+  height: 167px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.partner .better-banner::after {
+  content: "";
+  position: absolute;
+  bottom: -48px;
+  right: -38px;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.1));
+  border-radius: 10px;
+  padding: 20px;
+  filter: blur(57px);
+  width: 190px;
+  height: 167px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.partner .better-banner__img-human {
+  width: 405px;
+  height: 400px;
+  right: 83px;
+}
+.partner .better-banner .better-product {
+  right: 270px;
+}
+
+.reviews-wrapper .footer {
+  margin-top: 20px;
+}
+
+.breadcrumb-box {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+.breadcrumb-box .back-btn {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 15px;
+  color: #000;
+}
+.breadcrumb-box .back-btn img {
+  transition: all 0.2s linear;
+}
+.breadcrumb-box .back-btn:hover img {
+  transform: translateX(-10px);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.breadcrumb a {
+  font-size: 14px;
+  color: #b9b8b7;
+}
+.breadcrumb a:hover {
+  color: #3ca1f3;
 }
 
 @media screen and (max-width: 1440px) {

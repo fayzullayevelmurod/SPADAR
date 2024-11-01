@@ -1575,16 +1575,7 @@ body {
     display: flex;
     align-items: end;
     justify-content: space-between;
-    .breadcrumb {
-      display: flex;
-      align-items: center;
-      gap: 2px;
-      a,
-      span {
-        font-size: 14px;
-        color: #b9b8b7;
-      }
-    }
+
     .logo-title {
       color: #f11e1e;
       font-family: 'Bebas Neue';
@@ -1648,4 +1639,159 @@ body {
 }
 // reviews-block
 
+// recommend-watching
+.recommend-watching {
+  margin: 65px 0 35px 0;
+  .title-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 19px;
+    &__title {
+      font-size: 26px;
+      font-weight: 800;
+    }
+  }
+  .recommend-swiper__box {
+    position: relative;
+  }
+  .recommend-swiper-btn-prev,
+  .recommend-swiper-btn-next {
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #d2d2d2;
+    box-shadow: 2px 2px 14px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    z-index: 10;
+    left: -25px;
+    img {
+      transform: rotate(180deg);
+    }
+  }
+  .recommend-swiper-btn-next {
+    right: -25px;
+    left: unset;
+    img {
+      transform: rotate(0);
+    }
+  }
+  &__card {
+    &-img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    &-title {
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: 700;
+      width: 253px;
+      margin: 14px 0 8px 0;
+    }
+    &-desc {
+      font-size: 14px;
+      line-height: 18px;
+      color: #868585;
+      width: 296px;
+    }
+  }
+}
+.partner {
+  .better {
+    position: relative;
+    padding: 0;
+  }
+  .better-banner {
+    margin-top: 28px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -48px;
+      left: -38px;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0.8),
+        rgba(255, 0, 0, 0.1)
+      );
+      border-radius: 10px;
+      padding: 20px;
+      filter: blur(57px);
+      width: 190px;
+      height: 167px;
+      z-index: -1;
+      border-radius: 50%;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -48px;
+      right: -38px;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0.8),
+        rgba(255, 0, 0, 0.1)
+      );
+      border-radius: 10px;
+      padding: 20px;
+      filter: blur(57px);
+      width: 190px;
+      height: 167px;
+      z-index: -1;
+      border-radius: 50%;
+    }
+  }
+  .better-banner__img-human {
+    width: 405px;
+    height: 400px;
+    right: 83px;
+  }
+  .better-banner .better-product {
+    right: 270px;
+  }
+}
+.reviews-wrapper .footer {
+  margin-top: 20px;
+}
+.breadcrumb-box {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  .back-btn {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 15px;
+    color: #000;
+    img {
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      img {
+        transform: translateX(-10px);
+      }
+    }
+  }
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  a {
+    font-size: 14px;
+    color: #b9b8b7;
+    &:hover {
+      color: #3ca1f3;
+    }
+  }
+}
+// recommend-watching
 @import './media';
