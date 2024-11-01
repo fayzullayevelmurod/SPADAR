@@ -105,7 +105,7 @@ body {
   margin-bottom: 52px;
 }
 .fixed-menu__title .company-name {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-size: 70px;
   line-height: 99px;
 }
@@ -252,7 +252,7 @@ body {
 .intro-human__info h3 {
   font-size: 19px;
   line-height: 17px;
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro", sans-serif;
 }
 .intro-human__info h3 span {
   font-weight: normal;
@@ -305,14 +305,14 @@ body {
   box-shadow: 0 0 5px 3px rgba(240, 240, 240, 0.8);
 }
 .intro-servis__life-text {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   color: #f51d20;
   margin-bottom: 11px;
 }
 .intro-servis__life-title {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-size: 50px;
 }
 .intro .feature {
@@ -421,7 +421,7 @@ body {
   font-size: 122px;
   line-height: 137px;
   color: #fff;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
 }
 .about-us__learn-more-title span {
   color: #f53120;
@@ -649,7 +649,7 @@ body {
   margin-bottom: 16px;
 }
 .product-info .product-content .product-name {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 4px;
@@ -685,7 +685,7 @@ body {
   gap: 14px;
   color: #fff;
   font-size: 20px;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   transition: all 0.2s linear;
 }
 .product-info .order-btn:hover {
@@ -744,7 +744,7 @@ body {
   font-size: 60px;
   line-height: 60px;
   color: #fff;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   margin-left: auto;
   width: -moz-fit-content;
@@ -831,7 +831,7 @@ body {
   font-size: 90px;
   line-height: 90px;
   font-weight: bold;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   color: #fff;
   width: 661px;
   transform: translateX(-230px);
@@ -1215,7 +1215,7 @@ body {
   line-height: 72px;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   transform: skew(0, -3deg);
 }
 .spatula-banner__title span {
@@ -1366,7 +1366,7 @@ body {
   font-size: 60px;
   line-height: 65px;
   color: #fff;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
 }
 .better-banner__title span {
@@ -1440,7 +1440,7 @@ body {
 .footer-logo .logo-text {
   font-size: 68px;
   line-height: 97px;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
 }
 .footer-logos {
@@ -1556,7 +1556,7 @@ body {
 }
 .reviews-block .reviews-header .logo-title {
   color: #f11e1e;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-size: 39px;
   line-height: 35px;
 }
@@ -1597,7 +1597,8 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 520px;
+  max-width: 520px;
+  width: 100%;
   height: 2px;
   background: #fd2d1c;
 }
@@ -2397,6 +2398,22 @@ body {
   }
   .footer {
     padding: 53px 0 70px 0;
+  }
+  .reviews-block {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .reviews-block__box-img {
+    width: 100%;
+    height: 283px;
+  }
+  .reviews-block .reviews-quote {
+    margin: 28px 0 40px 0;
+  }
+  .reviews-block__box-title {
+    font-size: 35px;
+    line-height: 45px;
   }
 }
 @media screen and (max-width: 480px) {
