@@ -1543,6 +1543,86 @@ body {
   display: none;
 }
 
+.reviews-block {
+  max-width: 667px;
+  margin: 0 auto;
+  font-family: "Inter";
+}
+.reviews-block .reviews-header {
+  margin: 26px 0 16px 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.reviews-block .reviews-header .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.reviews-block .reviews-header .breadcrumb a,
+.reviews-block .reviews-header .breadcrumb span {
+  font-size: 14px;
+  color: #b9b8b7;
+}
+.reviews-block .reviews-header .logo-title {
+  color: #f11e1e;
+  font-family: "Bebas Neue";
+  font-size: 39px;
+  line-height: 35px;
+}
+.reviews-block__box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.reviews-block__box-title {
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "Inter";
+  font-weight: 800;
+}
+.reviews-block__box-desc {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+}
+.reviews-block__box-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 418px;
+}
+.reviews-block__box .small-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+.reviews-block .reviews-quote {
+  margin: 35px 0 64px 0;
+  padding: 30px 0;
+  position: relative;
+}
+.reviews-block .reviews-quote::before, .reviews-block .reviews-quote::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  height: 2px;
+  background: #fd2d1c;
+}
+.reviews-block .reviews-quote::after {
+  top: unset;
+  bottom: 0;
+}
+.reviews-block .reviews-quote__info {
+  font-size: 20px;
+  line-height: 32px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+}
+
 @media screen and (max-width: 1440px) {
   .fixed-menu {
     width: 400px;
