@@ -1790,6 +1790,9 @@ body {
   font-weight: bold;
   padding-top: 5px;
 }
+.alert-box h3 span {
+  color: #fd2d1c;
+}
 .alert-box p {
   font-size: 18px;
   margin-top: 10px;
@@ -1827,20 +1830,6 @@ body {
 }
 .news .show-more__news {
   margin: 14px auto 24px auto;
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  font-size: 14px;
-  color: #828282;
-  background: #eeeeee;
-  border-radius: 50px;
-  padding: 14px 30px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s linear;
-}
-.news .show-more__news:hover {
-  color: #000;
 }
 .news .swiper-button-disabled {
   opacity: 0;
@@ -1882,6 +1871,27 @@ body {
 .next-swiper img,
 .prev-swiper img {
   transform: rotate(180deg);
+}
+
+.show-more__news {
+  margin: 14px auto 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 14px;
+  color: #828282;
+  background: #eeeeee;
+  border-radius: 50px;
+  padding: 14px 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.show-more__news:hover {
+  color: #000;
+}
+.show-more__news.media-show {
+  display: none;
 }
 
 .next-swiper {
@@ -2564,6 +2574,7 @@ body {
   }
   .news .swiper-wrapper {
     flex-direction: column;
+    pointer-events: none;
     gap: 10px;
   }
   .news .swiper-slide {
@@ -2591,6 +2602,60 @@ body {
   }
   .news-title {
     font-size: 22px;
+  }
+  .plaster-banner__img {
+    display: none;
+  }
+  .plaster-banner {
+    margin-left: -15px;
+    margin-right: -15px;
+    background: url(../images/media-banner.png) no-repeat;
+    background-size: cover;
+    border-radius: 0;
+  }
+  .reviews-header {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    margin: 0;
+  }
+  .reviews-header .back-btn {
+    background: #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+  }
+  .logo-box {
+    display: none;
+  }
+  .recommend-watching {
+    margin-top: 30px;
+  }
+  .alert-box {
+    padding: 20px;
+    height: 175px;
+    border-radius: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    align-items: end;
+    background: url(../images/alert-box-medai-bg.png) no-repeat;
+    background-size: cover;
+    background-position: top right;
+  }
+  .alert-box .alert-box__img {
+    display: none;
+  }
+  .alert-box div {
+    width: 263px;
+  }
+  .alert-box h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .alert-box p {
+    font-size: 16px;
+  }
+  .show-more__news.media-show {
+    display: flex;
   }
 }
 @media screen and (max-width: 480px) {

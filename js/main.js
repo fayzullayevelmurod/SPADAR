@@ -122,7 +122,7 @@ try {
     },
     breakpoints: {
       992: {
-        slidesPerView: 36,
+        slidesPerView: 6,
       },
       768: {
         slidesPerView: 3.4,
@@ -141,7 +141,7 @@ try {
     },
     breakpoints: {
       992: {
-        slidesPerView: 36,
+        slidesPerView: 6,
       },
       768: {
         slidesPerView: 3.4,
@@ -160,7 +160,7 @@ try {
     },
     breakpoints: {
       992: {
-        slidesPerView: 36,
+        slidesPerView: 6,
       },
       768: {
         slidesPerView: 3.4,
