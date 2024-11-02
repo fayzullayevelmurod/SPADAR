@@ -98,20 +98,78 @@ try {
       nextEl: '.recommend-swiper-btn-next',
       prevEl: '.recommend-swiper-btn-prev',
     },
-    // breakpoints: {
-    //   1024: {
-    //     slidesPerView: 3,
-    //   },
-    //   768: {
-    //     slidesPerView: 2,
-    //   },
-    //   0: {
-    //     slidesPerView: 1,
-    //     centeredSlides: true,
-    //     initialSlide: 1
-    //   }
-    // }
+    breakpoints: {
+      992: {
+        slidesPerView: 3.6,
+      },
+      0: {
+        slidesPerView: 1,
+      }
+    }
   });
+} catch (error) {
+
+}
+
+// news-swiper
+try {
+  let newsSwiper1 = new Swiper('.news-swiper', {
+    slidesPerView: 6,
+    spaceBetween: 3,
+    navigation: {
+      nextEl: '.news-swiper-btn-next',
+      prevEl: '.news-swiper-btn-prev',
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 36,
+      },
+      768: {
+        slidesPerView: 3.4,
+      },
+      0: {
+        slidesPerView: 1,
+      }
+    }
+  })
+  let newsSwiper2 = new Swiper('.news-swiper-2', {
+    slidesPerView: 6,
+    spaceBetween: 3,
+    navigation: {
+      nextEl: '.news-swiper-btn-next-2',
+      prevEl: '.news-swiper-btn-prev-2',
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 36,
+      },
+      768: {
+        slidesPerView: 3.4,
+      },
+      0: {
+        slidesPerView: 1,
+      }
+    }
+  })
+  let newsSwiper3 = new Swiper('.news-swiper-3', {
+    slidesPerView: 6,
+    spaceBetween: 3,
+    navigation: {
+      nextEl: '.news-swiper-btn-next-3',
+      prevEl: '.news-swiper-btn-prev-3',
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 36,
+      },
+      768: {
+        slidesPerView: 3.4,
+      },
+      0: {
+        slidesPerView: 1,
+      }
+    }
+  })
 } catch (error) {
 
 }

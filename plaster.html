@@ -47,11 +47,11 @@
             <h2 class="title-box__title">ТОП-Публикации</h2>
           </div>
           <div class="recommend-swiper__box">
-            <button class="recommend-swiper-btn-prev swiper-button-disabled" disabled="" tabindex="-1"
-              aria-label="Previous slide" aria-controls="swiper-wrapper-6a4e41e723016f1f" aria-disabled="true">
+            <button class="recommend-swiper-btn-prev prev-swiper" disabled="" tabindex="-1" aria-label="Previous slide"
+              aria-controls="swiper-wrapper-6a4e41e723016f1f" aria-disabled="true">
               <img src="images/icons/next-icon-2.png" alt="">
             </button>
-            <button class="recommend-swiper-btn-next" tabindex="0" aria-label="Next slide"
+            <button class="recommend-swiper-btn-next next-swiper" tabindex="0" aria-label="Next slide"
               aria-controls="swiper-wrapper-6a4e41e723016f1f" aria-disabled="false">
               <img src="images/icons/next-icon-2.png" alt="">
             </button>
@@ -108,24 +108,330 @@
       <div class="container">
         <div class="alert-box">
           <img src="images/icons/down-arrows.png" alt="">
-          <h3>60% новых фасадов переделывают<br> в течение <span>первых 3х лет</span></h3>
-          <p>Изучи и не теряй деньги!</p>
-          <img src="images/alert-banner.png" alt="House image">
+          <div>
+            <h3>60% новых фасадов переделывают<br> в течение <span>первых 3х лет</span></h3>
+            <p>Изучи и не теряй деньги!</p>
+          </div>
+          <img class="alert-box__img" src="images/alert-banner.png" alt="House image">
         </div>
       </div>
 
-      <div class="recommend-watching">
+      <!-- news -->
+      <section class="news">
+        <div class="container">
+          <div class="news-box">
+            <div class="news-title__box">
+              <img src="images/icons/news-icon-1.png" alt="">
+              <h2 class="news-title">Сравнение со «Спадар»</h2>
+            </div>
+            <div class="slider-box">
+              <div class="news-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/reviews-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-2.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-3.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="news-swiper-btn-next next-swiper">
+                <img src="images/icons/next-icon-2.png" alt="">
+              </button>
+              <button class="news-swiper-btn-prev prev-swiper">
+                <img src="images/icons/next-icon-2.png" alt="">
+              </button>
+              <button class="show-more__news">
+                <img src="images/icons/eye.png" alt="">
+                <span>Читать все статьи</span>
+              </button>
+            </div>
+          </div>
+          <div class="news-box">
+            <div class="news-title__box">
+              <img src="images/icons/news-icon-2.png" alt="">
+              <h2 class="news-title">Обучения по «Спадар»</h2>
+            </div>
+            <div class="slider-box">
+              <div class="news-swiper-2 swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/reviews-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-2.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-3.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="news-swiper-btn-next-2 next-swiper">
+                <img src="images/icons/next-icon-2.png" alt="">
+              </button>
+              <button class="news-swiper-btn-prev-2 prev-swiper">
+                <img src="images/icons/next-icon-2.png" alt="">
+              </button>
+              <button class="show-more__news">
+                <img src="images/icons/eye.png" alt="">
+                <span>Читать все статьи</span>
+              </button>
+            </div>
+          </div>
+          <div class="news-box">
+            <div class="news-title__box">
+              <img src="images/icons/news-icon-3.png" alt="">
+              <h2 class="news-title">Отзывы и СМИ о нас</h2>
+            </div>
+            <div class="slider-box">
+              <div class="news-swiper-3 swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/reviews-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-2.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-3.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news-card">
+                      <img class="news-card__img" src="images/news-img-1.png" alt="">
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">Штукатурим углы и перепады</h3>
+                        <p class="news-card__desc">
+                          Итак, представим себе старинный городок — уютный, с узкими улочками,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="news-swiper-btn-next-3 next-swiper">
+                <img src="images/icons/next-icon-2.png" alt="">
+              </button>
+              <button class="news-swiper-btn-prev-3 prev-swiper">
+                <img src="images/icons/next-icon-2.png" alt="">
+              </button>
+              <button class="show-more__news">
+                <img src="images/icons/eye.png" alt="">
+                <span>Читать все статьи</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- news -->
+
+      <div class="recommend-watching mt-0">
         <div class="container">
           <div class="title-box">
             <img src="images/icons/like-icon.png" alt="">
             <h2 class="title-box__title">Рекомендуем посмотреть</h2>
           </div>
           <div class="recommend-swiper__box">
-            <button class="recommend-swiper-btn-prev swiper-button-disabled" disabled="" tabindex="-1"
-              aria-label="Previous slide" aria-controls="swiper-wrapper-6a4e41e723016f1f" aria-disabled="true">
+            <button class="recommend-swiper-btn-prev prev-swiper" disabled="" tabindex="-1" aria-label="Previous slide"
+              aria-controls="swiper-wrapper-6a4e41e723016f1f" aria-disabled="true">
               <img src="images/icons/next-icon-2.png" alt="">
             </button>
-            <button class="recommend-swiper-btn-next" tabindex="0" aria-label="Next slide"
+            <button class="recommend-swiper-btn-next next-swiper" tabindex="0" aria-label="Next slide"
               aria-controls="swiper-wrapper-6a4e41e723016f1f" aria-disabled="false">
               <img src="images/icons/next-icon-2.png" alt="">
             </button>
