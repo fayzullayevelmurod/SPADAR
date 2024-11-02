@@ -1677,10 +1677,12 @@ body {
   .better {
     position: relative;
     padding: 0;
+    z-index: 1;
   }
   .better-banner {
     margin-top: 28px;
     position: relative;
+    z-index: 1;
     &::before {
       content: '';
       position: absolute;
@@ -1725,6 +1727,7 @@ body {
   }
   .better-banner .better-product {
     right: 270px;
+    z-index: -1;
   }
 }
 .reviews-wrapper .footer {

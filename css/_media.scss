@@ -341,6 +341,20 @@
   .recommend-watching__card-img {
     border-radius: 10px;
   }
+  .reviews-page {
+    .partner .container {
+      padding: 0;
+    }
+    .better-banner {
+      padding: 55px 0 200px 16px;
+    }
+    .better-banner__img-human {
+      right: 0;
+    }
+    .better-banner .better-product {
+      right: 150px;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .header .big-container {
@@ -773,6 +787,47 @@
   .show-more__news.media-show {
     display: flex;
   }
+  .logo-title {
+    display: none;
+  }
+  .reviews-wrapper {
+    .reviews-header {
+      position: unset;
+      margin: 20px 0;
+    }
+  }
+  .reviews-page {
+    .better {
+      overflow: hidden;
+    }
+    .better-banner {
+      padding-bottom: 300px;
+    }
+    .better-banner__img-human {
+      right: -170px;
+    }
+    .better-banner .better-product {
+      bottom: -177px;
+      right: 0;
+    }
+    .better-banner__title {
+      width: 335px;
+    }
+    .better-banner__info {
+      margin: 10px 0;
+    }
+    .green-btn {
+      bottom: 215px;
+      left: 15px;
+    }
+  }
+  .breadcrumb-box {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  .reviews-page .footer {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -919,6 +974,16 @@
     font-size: 16px;
     line-height: 18px;
   }
+  .reviews-page .better-banner__img-human {
+    right: -205px;
+  }
+  .reviews-page .better-banner__info {
+    width: 269px;
+  }
+  .breadcrumb-box {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 @media screen and (max-width: 400px) {
   .news-card {
@@ -927,4 +992,5 @@
   .news-card__img {
     max-width: 100%;
   }
+
 }

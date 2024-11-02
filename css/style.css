@@ -1652,10 +1652,12 @@ body {
 .partner .better {
   position: relative;
   padding: 0;
+  z-index: 1;
 }
 .partner .better-banner {
   margin-top: 28px;
   position: relative;
+  z-index: 1;
 }
 .partner .better-banner::before {
   content: "";
@@ -1692,6 +1694,7 @@ body {
 }
 .partner .better-banner .better-product {
   right: 270px;
+  z-index: -1;
 }
 
 .reviews-wrapper .footer {
@@ -2232,6 +2235,18 @@ body {
   .recommend-watching__card-img {
     border-radius: 10px;
   }
+  .reviews-page .partner .container {
+    padding: 0;
+  }
+  .reviews-page .better-banner {
+    padding: 55px 0 200px 16px;
+  }
+  .reviews-page .better-banner__img-human {
+    right: 0;
+  }
+  .reviews-page .better-banner .better-product {
+    right: 150px;
+  }
 }
 @media screen and (max-width: 768px) {
   .header .big-container {
@@ -2657,6 +2672,43 @@ body {
   .show-more__news.media-show {
     display: flex;
   }
+  .logo-title {
+    display: none;
+  }
+  .reviews-wrapper .reviews-header {
+    position: unset;
+    margin: 20px 0;
+  }
+  .reviews-page .better {
+    overflow: hidden;
+  }
+  .reviews-page .better-banner {
+    padding-bottom: 300px;
+  }
+  .reviews-page .better-banner__img-human {
+    right: -170px;
+  }
+  .reviews-page .better-banner .better-product {
+    bottom: -177px;
+    right: 0;
+  }
+  .reviews-page .better-banner__title {
+    width: 335px;
+  }
+  .reviews-page .better-banner__info {
+    margin: 10px 0;
+  }
+  .reviews-page .green-btn {
+    bottom: 215px;
+    left: 15px;
+  }
+  .breadcrumb-box {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  .reviews-page .footer {
+    margin-top: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .header .big-container {
@@ -2800,6 +2852,16 @@ body {
   .fixed-menu .list-box a {
     font-size: 16px;
     line-height: 18px;
+  }
+  .reviews-page .better-banner__img-human {
+    right: -205px;
+  }
+  .reviews-page .better-banner__info {
+    width: 269px;
+  }
+  .breadcrumb-box {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 400px) {
