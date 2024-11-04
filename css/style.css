@@ -42,7 +42,7 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 992px) {
   .home-page .container,
   .home-page .big-container {
     transform: scale(0.9);
@@ -1914,7 +1914,7 @@ body {
   transform: rotate(0);
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1260px) {
   .fixed-menu {
     width: 400px;
     padding: 30px 30px 10px 30px;
