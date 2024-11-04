@@ -42,6 +42,15 @@ body {
   margin: 0;
 }
 
+@media screen and (min-width: 1440px) {
+  .home-page .container,
+  .home-page .big-container {
+    transform: scale(0.9);
+  }
+  .home-page .header {
+    margin-top: -10px;
+  }
+}
 .wrapper {
   overflow: hidden;
   width: calc(100% - 481px);
